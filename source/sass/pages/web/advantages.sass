@@ -1,0 +1,29 @@
+.advantages
+  background: linear-gradient(45deg, rgba(35,7,77,1) 0%, rgba(35,7,77,1) 43%, rgba(0,0,128,1) 100%)
+  padding-top: 60px
+  position: relative
+  &__head
+    text-align: center
+    font-size: 32px
+    margin-bottom: 30px
+    font-weight: 700
+  &__item
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    text-align: center
+    img
+      height: 150px
+      width: 150px
+      margin-bottom: 5px
++media-breakpoint-down(sm)
+  .advantages
+    &__item
+      font-size: 16px
+      line-height: 1.1
+      img
+        height: 100px
+        width: 75px
+    &__head
+      font-size: 22px

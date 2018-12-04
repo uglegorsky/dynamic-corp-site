@@ -1,0 +1,87 @@
+.start
+  background-image: url("../../../img/index/start.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  height: 60vh
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  min-height: 250px
+  &__wrapper
+    //width: 70%
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__communication
+    position: absolute
+    top: 65px
+    right: 50px
+    padding: 5px
+    border-radius: 15px
+    background-color: transparentize(#000, .7)
+    li
+      text-align: left
+    a
+      color: white
+      &:hover
+        text-decoration: none
+      i
+      .fa-at
+        color: $accent
+        padding-right: 5px
+      .fa-whatsapp
+        color: #25D366
+        font-size: 22px
+        padding-right: 1px
+      .fa-phone
+        padding-right: 8px
+        color: #1e7e92
+
+  &__head
+    display: inline-block
+    color: #fff
+    font-family: "Montserrat", sans-serif
+    font-size: 60px
+    text-transform: uppercase
+    text-align: center
+    font-weight: 600
+    line-height: 1
+    margin-top: 10px
+    padding: 15px
+    background-color: transparentize(#000, .7)
+    border-radius: 10px
+    span
+      font-family: "Montserrat", sans-serif
+      font-weight: 600
+      color: $accent
+  &__subhead
+    display: inline-block
+    font-family: "Roboto Slab", serif
+    text-transform: uppercase
+    font-size: 22px
+    text-align: center
+    font-weight: 700
+    text-shadow: 2px 4px 3px rgba(0,0,0,.8)
+
++media-breakpoint-down(md)
+  .start
+    &__head
+      font-size: 32px
+    &__subhead
+      font-size: 20px
+    &__communication
+      display: none
+
++media-breakpoint-down(xs)
+  .start
+    background-image: url('../../../img/index/mobile/start__mobile.jpg')
+    &__head
+      width: 100%
+      padding: 10px 5px
+      font-size: 24px
+    &__subhead
+      font-size: 16px

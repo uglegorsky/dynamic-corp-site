@@ -1,0 +1,64 @@
+.proofs
+  background-image: url('../../../img/photo/proofs.jpeg')
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+  background-repeat: no-repeat
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding: 50px 10px
+  &__head
+    text-align: center
+    font-size: 42px
+    margin-bottom: 50px
+    padding-bottom: 10px
+    position: relative
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3)
+    &::after
+      content: ''
+      display: block
+      height: 3px
+      width: 10%
+      position: absolute
+      background-color: $accent
+      bottom: 0
+      left: 0
+      right: 0
+      margin-left: auto
+      margin-right: auto
+  &__list
+    list-style-type: none
+    li
+      font-size: 24px
+      padding: 10px
+      i
+        color: $accent
+        padding-right: 15px
+    margin-bottom: 50px
+  &__desc
+    font-size: 26px
+    letter-spacing: 1.5px
+    font-weight: 700
+    text-transform: uppercase
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3)
+    text-align: center
+  &__desc-style
+    font-size: 32px
+  .mfp-arrow
+    outline: none
+
++media-breakpoint-down(sm)
+  .proofs
+    &__head
+      font-size: 24px
+      padding: 25px 5px
+    &__list
+      li
+        font-size: 18px
+    &__desc
+      font-size: 16px
++media-breakpoint-down(xs)
+  .proofs
+    background-image: url('../../../img/photo/mobile/proofs__mobile.jpg')
+    background-attachment: scroll

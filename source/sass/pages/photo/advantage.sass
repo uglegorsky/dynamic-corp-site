@@ -1,0 +1,45 @@
+.advantage
+  background-image: url('../../../img/photo/advantage2.jpeg')
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+  background-repeat: no-repeat
+  min-height: 250px
+  padding-top: 50px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  &__head
+    text-align: center
+    font-size: 42px
+    padding-bottom: 10px
+    margin-bottom: 50px
+    position: relative
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3)
+    &::after
+      content: ''
+      display: block
+      height: 3px
+      width: 10%
+      position: absolute
+      background-color: $accent
+      bottom: 0
+      left: 0
+      right: 0
+      margin-left: auto
+      margin-right: auto
+  &__desc
+    font-size: 24px
+    line-height: 1.2
+    text-align: justify
++media-breakpoint-down(sm)
+  .advantage
+    &__head
+      font-size: 24px
+      padding: 25px 5px
+    &__desc
+      font-size: 18px
++media-breakpoint-down(xs)
+  .advantage
+    background-image: url('../../../img/photo/mobile/advantage2__mobile.jpg')
+    background-attachment: scroll

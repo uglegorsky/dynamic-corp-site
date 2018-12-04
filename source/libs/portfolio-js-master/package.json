@@ -1,0 +1,56 @@
+{
+  "name": "portfolio-js",
+  "version": "2.1.5",
+  "description": "Tiny JavaScript carousel library with horizontal scrolling and all the goodness.",
+  "keywords": [
+    "gallery",
+    "carousel",
+    "portfolio",
+    "horizontal scrolling",
+    "photos",
+    "plugin",
+    "mobile"
+  ],
+  "homepage": "http://portfoliojs.com",
+  "bugs": {
+    "url": "https://github.com/abhiomkar/portfolio-js/issues"
+  },
+  "main": "dist/portfolio.js",
+  "module": "dist/portfolio.es.js",
+  "jsnext:main": "dist/portfolio.es.js",
+  "browser": "dist/portfolio.umd.js",
+  "source": "src/portfolio.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhiomkar/portfolio-js"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "rollup --config",
+    "build-demo": "npm run build && parcel build examples/image_gallery/index.html -d . --public-url ./ --no-minify",
+    "dev": "parcel examples/image_gallery/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhinay Omkar <abhiomkar@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "node-sass": "^4.7.2",
+    "parcel-bundler": "^1.6.2",
+    "postcss-url": "^7.3.1",
+    "rollup": "^0.57.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-postcss": "^1.3.4",
+    "rollup-plugin-sass": "^0.6.0",
+    "rollup-plugin-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "npm": "^5.7.1"
+  },
+  "files": [
+    "dist"
+  ]
+}

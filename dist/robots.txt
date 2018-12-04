@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: 
+Disallow: /errors
+
+User-agent: YandexBot
+Disallow: 
+Disallow: /errors
+Host: www.dynamic-corp.ru
+Sitemap: https://dynamic-corp.ru/sitemap.xml

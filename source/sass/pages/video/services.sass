@@ -1,0 +1,80 @@
+.services
+  background-image: url('../../../img/video/services2.jpeg')
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+  padding-bottom: 50px
+  background-color: #000000
+  border-bottom: 3px solid white
+  &__head
+      padding: 25px 5px
+      font-size: 26px
+      text-align: center
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3)
+      background: linear-gradient(to right, #2ea2cc, #2f31ff)
+      border: 3px solid white
+      border-radius: 15px
+      text-transform: uppercase
+      transform: translateY(-50%)
+  &__subhead
+    margin-top: 0
+    font-size: 24px
+    text-align: left
+    strong
+      font-size: 28px
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3)
+      text-align: left
+  &__line
+    padding: 10px 0
+    background: url("../../../img/video/services__line-background.jpg")
+    background-size: cover
+    border-radius: 15px
+    margin-bottom: 25px
+    color: white
+    h2
+      font-weight: 500
+    p
+      font-weight: 400
+    &:last-child
+      margin-bottom: 0
+  &__left-column
+    display: inline-flex
+    flex-direction: column
+    justify-content: center
+  &__button-wrap
+    width: 100%
+    display: flex
+    justify-content: center
+  button
+    margin: 30px auto
+
++media-breakpoint-down(md)
+  .services
+    &__head
+      padding: 10px 5px
+      font-size: 18px
+
++media-breakpoint-down(sm)
+  .services
+    &__head
+      font-size: 14px
+    &__subhead
+      font-size: 16px
+      strong
+        font-size: 22px
+    &__left-column
+      h2
+        font-size: 18px
++media-breakpoint-down(xs)
+  .services
+    background-image: url('../../../img/video/mobile/services2__mobile.jpg')
+    background-attachment: scroll
+    &__head
+      font-size: 14px
+    &__subhead
+      font-size: 16px
+      strong
+        font-size: 22px
+    &__left-column
+      h2
+        font-size: 18px

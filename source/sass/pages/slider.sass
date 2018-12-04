@@ -1,0 +1,32 @@
+.slider-wrap
+  background-color: transparentize(#000, .6)
+  border-radius: 10px
+  padding: 10px 30px
+  position: relative
+  margin: 0 10px
+  i
+    cursor: pointer
+    font-size: 26px
+  .next
+    position: absolute
+    top: 50%
+    left: 5px
+  .prev
+    position: absolute
+    top: 50%
+    right: 5px
+  .tns-nav
+    text-align: center
+    margin: 10px 0
+    [aria-controls]
+      width: 9px
+      height: 9px
+      padding: 0
+      margin: 0 5px
+      border-radius: 50%
+      background: white
+      border: 0
+    [aria-controls^="gutter-item"]
+      transition: all 0.4s ease 0s
+  .tns-nav-active
+    background: $accent !important

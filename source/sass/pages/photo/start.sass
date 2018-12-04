@@ -1,0 +1,62 @@
+.start
+  background-color: #fff
+  background-image: url('../../../img/photo/start.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+.start-head
+  background-image: url('../../../img/photo/start-head.jpeg')
+  background-size: cover
+  background-color: white
+  background-attachment: fixed
+  background-repeat: no-repeat
+  padding: 50px 30px
+  padding-bottom: 20px
+  text-align: center
+  color: white
+  line-height: 1.2
+  min-height: 250px
+  span
+    display: inline-block
+    font-size: 26px
+    letter-spacing: 1.5px
+    font-weight: 700
+    text-transform: uppercase
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3)
+  .text-animate1
+    animation-delay: 1.5s
+  .text-animate2
+    animation-delay: 2s
+  .text-animate3
+    animation-delay: 3s
+    padding-left: 0
+    text-align: left
+  .text-animate4
+    animation-delay: 4s
+    padding-left: 26%
+  &__list
+    li
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
++media-breakpoint-down(xs)
+  .start
+    background-image: url('../../../img/photo/mobile/start__mobile.jpg')
+  .start-head
+    background-image: url('../../../img/photo/mobile/start-head__mobile.jpg')
+    span
+      display: inline-block
+      font-size: 16px
+      text-align: center
+      width: 100%
+    &__list
+      li
+        .animated
+          //display: none
+        span.text-animate1
+        span.text-animate2
+        span.text-animate3
+          padding: 0
+          text-align: center
+        span.text-animate4
+          padding: 0
+          text-align: center

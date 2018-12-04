@@ -1,0 +1,23 @@
+.about
+  background-image: url('../../../img/index/about.jpeg')
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+  background-repeat: no-repeat
+  min-height: 500px
+  &__desc
+    text-align: justify
+    color: $reverse-color
+    font-size: 20px
+    padding: 0 15px
+    text-shadow: 2px 4px 3px rgba(0,0,0,.8)
+  &__name
+    color: $accent
+  &__video
+    margin-top: 50px
+
++media-breakpoint-down(xs)
+  .about
+    background-image: url('../../../img/index/mobile/about__mobile.jpg')
+    p
+      line-height: 1.2

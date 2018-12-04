@@ -1,0 +1,130 @@
+.contact-btn
+  display: flex
+  position: fixed
+  align-items: center
+  bottom: 25px
+  right: 25px
+  text-decoration: none
+  background-color: white
+  transition-duration: 500ms
+  transition-property: all
+  padding: 5px
+  border-radius: 5px
+  img
+    height: 40px
+    width: 40px
+  span
+    display: none
+    font-family: "Roboto Slab", serif
+    text-transform: uppercase
+    font-size: 18px
+    color: black
+    padding: 0 5px
+    font-weight: bold
+  &:hover
+    text-decoration: none
+#contacts
+  background: white
+  padding: 20px 30px
+  text-align: center
+  max-width: 400px
+  margin: 40px auto
+  position: relative
+  color: black
+  border-radius: 10px
+  img
+    width: 150px
+    margin-bottom: 10px
+  h3
+    font-family: "Roboto Slab", serif
+    color: black
+    font-size: 24px
+    padding: 10px 5px
+  p, label
+    font-family: "Roboto Slab", serif
+    color: black
+    font-size: 18px
+  .contacts__form
+    font-size: 16px
+    font-weight: 700
+    color: black
+    fieldset
+      padding: 0 10px
+    input, textarea
+      width: 100%
+      height: 50px
+      padding: 5px
+      background: rgba(black, .4)
+      color: grey
+      font-weight: bold
+      border: 2px solid $accent
+      border-radius: 2px
+      &:focus
+        outline: none
+        border: 2px solid brown
+    textarea
+      width: 100%
+      height: 80px
+    p
+      margin-bottom: 3px
+  .contacts__btn-submit
+    font-weight: 500
+    color: black
+    padding: 5px 10px
+    margin-top: 15px
+    border: 2px solid #2EA2CC
+    border-radius: 5px
+    background: transparent
+    font-size: 24px
+    cursor: pointer
+    transition: all .5s ease-in
+    &:hover, &:focus
+      background-color: #2EA2CC
+      color: white
+      border: 2px solid black
+
+
+.communication
+  text-align: left
+  a
+    font-size: 18px
+    color: black
+    text-align: left
+    padding-left: 10%
+    i
+      font-size: 22px
+      color: blue
+      padding-right: 7px
+      text-align: center
+    .fa-at
+      color: $accent
+    .fa-whatsapp
+      color: #25D366
+      font-size: 24px
+      padding-right: 3px
+    .fa-phone
+      padding-right: 8px
+      color: #0f6674
+    .fa-vk
+      color: #45668e
+      padding-right: 2px
+    .fa-instagram
+      color: #cd486b
+    &:hover
+      text-decoration: none
+  li
+    margin: 5px 0
+
+
++media-breakpoint-down(sm)
+  .contact-btn
+    bottom: 10px
+    right: 10px
+    img
+      height: 30px
+      width: 30px
+  .communication
+    a
+      font-size: 16px
+      i
+        font-size: 18px

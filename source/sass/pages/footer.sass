@@ -1,0 +1,56 @@
+footer
+  padding: 30px 50px
+  .footer
+    &__wrap
+      width: 100%
+      justify-content: flex-start
+      align-items: flex-end
+    &__menu
+      display: flex
+      text-align: right
+      li
+        padding: 5px
+        &:last-child
+          padding-right: 0
+        a
+          font-size: 20px
+          color: #fff
+          &:hover
+            color: #fff
+    &__main-menu, &__social-menu
+      padding-right: 40px
+    &__social-menu
+      text-align: center
+      li
+        padding: 5px
+        a
+          font-size: 20px
+          &:hover
+            color: darken(#fff, 30%)
+    &__logotype
+      margin-right: auto
+      text-decoration: none
+      &:hover
+        text-decoration: none
+      img
+        width: 95px
+      i
+        font-weight: 400
+        color: #fff
+        font-size: 14px
+
++media-breakpoint-down(xs)
+  footer
+    padding: 25px 10px
+    .footer__menu
+      li
+        padding: 0
+    .footer__social-menu
+      flex-direction: column
+      padding-right: 10px
+    .footer__services-menu
+      flex-direction: column
+    .footer__logotype
+      i
+        text-align: left
+

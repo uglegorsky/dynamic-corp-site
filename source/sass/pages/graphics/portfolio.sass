@@ -1,0 +1,51 @@
+.portfolio
+  background-image: url('../../../img/graphics/portfolio.jpeg')
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+  &__category
+    margin: auto
+    display: flex
+    flex-wrap: wrap
+    padding-top: 15px
+    margin-bottom: 10px
+    li
+      list-style-type: none
+      display: inline-flex
+      margin: 0 20px
+      font-weight: 600
+      cursor: pointer
+      color: white
+      line-height: 18px
+      transition: all .7s ease
+      padding-bottom: 5px
+      &:hover
+        color: $accent
+        font-size: 18px
+
+      &.active
+        border-bottom: 1px solid $accent
+  &__grid
+    margin-top: 20px
+    .mix
+      background-color: #000
+  &__overlay
+    position: relative
+    span
+      position: absolute
+      display: none
+      text-align: center
+      z-index: 1
+      bottom: 0
+      left: 0
+      width: 100%
+      background-color: transparentize(gray,.9)
+      color: white
+  &__button-wrapper
+    padding: 25px 10px
+    button
+      margin: auto
++media-breakpoint-down(xs)
+  .portfolio
+    background-image: url('../../../img/graphics/mobile/portfolio__mobile.jpg')
+    background-attachment: scroll

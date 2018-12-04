@@ -1,0 +1,23 @@
+.portfolio
+  background-image: url('../../../img/films/portfolio.jpeg')
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+  &__video
+    background-color: #000
+    height: 100%
+  &__author
+    font-family: 'Merriweather', sans-serif
+    font-weight: 300
+    text-align: center
+    font-size: 18px
+    padding: 10px 5px
+  // background-color: transparentize(#000, .6)
+  // border-bottom-right-radius: 10px
+  // border-bottom-left-radius: 10px
++media-breakpoint-down(xs)
+    .portfolio
+      background-image: url('../../../img/films/mobile/portfolio__mobile.jpg')
+      background-attachment: scroll
+      &__author
+        font-size: 18px

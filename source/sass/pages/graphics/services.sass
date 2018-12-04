@@ -1,0 +1,66 @@
+.services
+  background-image: url('../../../img/graphics/services.jpeg')
+  background-size: cover
+  background-position: 0 0
+  background-attachment: fixed
+  padding-bottom: 50px
+  .head
+    color: #fff
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3)
+  &__offer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 400px
+    height: 400px
+    padding: 10px
+    color: white
+    border-radius: 50%
+    &:nth-child(2n)
+      margin-right: 0
+  .offer
+    &__head
+      padding: 5px
+      text-align: center
+    &__icon
+      font-size: 32px
+    &__desc
+      padding: 5px
+      font-size: 14px
+      text-align: center
+      font-weight: 500
+    background-size: cover
+  .offer--3d-animation
+    background-image: url('../../../img/graphics/services__3d-animation.jpg')
+  .offer--animation
+    background-image: url('../../../img/graphics/services__animation.png')
+  .offer--design
+    background-image: url('../../../img/graphics/services__design.png')
+  .offer--scenes
+    background-image: url('../../../img/graphics/services__scenes.png')
+  .offer--vfx
+    background-image: url('../../../img/graphics/services__vfx.jpg')
+    background-position: center
+
++media-breakpoint-down(md)
+  .services
+    .services__line
+      flex-direction: column
+      align-items: center
+    .offer
+      margin-bottom: 10px
++media-breakpoint-down(sm)
+  .services
+    &__offer
+      width: 300px
+      height: 300px
+    .offer
+      &__head
+        font-size: 22px
+      &__desc
+        font-size: 12px
++media-breakpoint-down(xs)
+  .services
+    background-image: url('../../../img/graphics/mobile/services__mobile.jpg')
+    background-attachment: scroll
