@@ -2,5 +2,5 @@ https://dynamic-corp.ru/
 
 Website of Dynamic Company. Design and develop by Dmitry Voronin 
 
-Toolkit: Gulp
+Toolkit: Gulp <br>
 JS library: jQuery
